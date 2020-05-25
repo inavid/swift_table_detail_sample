@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		4C1A426D247B7BB400660446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A426C247B7BB400660446 /* AppDelegate.swift */; };
 		4C1A426F247B7BB400660446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A426E247B7BB400660446 /* SceneDelegate.swift */; };
-		4C1A4271247B7BB400660446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A4270247B7BB400660446 /* ViewController.swift */; };
 		4C1A4274247B7BB400660446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A4272247B7BB400660446 /* Main.storyboard */; };
 		4C1A4276247B7BB700660446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A4275247B7BB700660446 /* Assets.xcassets */; };
 		4C1A4279247B7BB700660446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A4277247B7BB700660446 /* LaunchScreen.storyboard */; };
+		4C1A4289247B8E0500660446 /* GamesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A4288247B8E0500660446 /* GamesTableViewController.swift */; };
+		4C1A428B247B8EC900660446 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A428A247B8EC900660446 /* Game.swift */; };
+		4C1A428E247B919C00660446 /* ff7_remake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A428C247B919C00660446 /* ff7_remake.jpg */; };
+		4C1A428F247B919C00660446 /* re3_remake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A428D247B919C00660446 /* re3_remake.jpg */; };
+		4C1A4291247B973400660446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A4290247B973400660446 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C1A4269247B7BB400660446 /* list-with-detail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "list-with-detail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1A426C247B7BB400660446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C1A426E247B7BB400660446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C1A4270247B7BB400660446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C1A4273247B7BB400660446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C1A4275247B7BB700660446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1A4278247B7BB700660446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1A427A247B7BB700660446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1A4288247B8E0500660446 /* GamesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableViewController.swift; sourceTree = "<group>"; };
+		4C1A428A247B8EC900660446 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4C1A428C247B919C00660446 /* ff7_remake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ff7_remake.jpg; sourceTree = "<group>"; };
+		4C1A428D247B919C00660446 /* re3_remake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = re3_remake.jpg; sourceTree = "<group>"; };
+		4C1A4290247B973400660446 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		4C1A426B247B7BB400660446 /* list-with-detail */ = {
 			isa = PBXGroup;
 			children = (
+				4C1A4287247B8CAE00660446 /* Assets */,
+				4C1A4286247B8C6400660446 /* Controller */,
+				4C1A4285247B8C5D00660446 /* View */,
+				4C1A4284247B8C4D00660446 /* Model */,
 				4C1A426C247B7BB400660446 /* AppDelegate.swift */,
 				4C1A426E247B7BB400660446 /* SceneDelegate.swift */,
-				4C1A4270247B7BB400660446 /* ViewController.swift */,
-				4C1A4272247B7BB400660446 /* Main.storyboard */,
-				4C1A4275247B7BB700660446 /* Assets.xcassets */,
-				4C1A4277247B7BB700660446 /* LaunchScreen.storyboard */,
 				4C1A427A247B7BB700660446 /* Info.plist */,
 			);
 			path = "list-with-detail";
+			sourceTree = "<group>";
+		};
+		4C1A4284247B8C4D00660446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C1A428A247B8EC900660446 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C1A4285247B8C5D00660446 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C1A4272247B7BB400660446 /* Main.storyboard */,
+				4C1A4277247B7BB700660446 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C1A4286247B8C6400660446 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4C1A4290247B973400660446 /* ViewController.swift */,
+				4C1A4288247B8E0500660446 /* GamesTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C1A4287247B8CAE00660446 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4C1A428C247B919C00660446 /* ff7_remake.jpg */,
+				4C1A428D247B919C00660446 /* re3_remake.jpg */,
+				4C1A4275247B7BB700660446 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +169,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1A428E247B919C00660446 /* ff7_remake.jpg in Resources */,
 				4C1A4279247B7BB700660446 /* LaunchScreen.storyboard in Resources */,
 				4C1A4276247B7BB700660446 /* Assets.xcassets in Resources */,
 				4C1A4274247B7BB400660446 /* Main.storyboard in Resources */,
+				4C1A428F247B919C00660446 /* re3_remake.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A4271247B7BB400660446 /* ViewController.swift in Sources */,
+				4C1A4291247B973400660446 /* ViewController.swift in Sources */,
+				4C1A428B247B8EC900660446 /* Game.swift in Sources */,
+				4C1A4289247B8E0500660446 /* GamesTableViewController.swift in Sources */,
 				4C1A426D247B7BB400660446 /* AppDelegate.swift in Sources */,
 				4C1A426F247B7BB400660446 /* SceneDelegate.swift in Sources */,
 			);
